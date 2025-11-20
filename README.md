@@ -1,5 +1,5 @@
 # Project-1--Johan-Brooklyn-Zinaad-Davinio
-Sukkel: Johan
+Leider: Brooklyn
 Lid 1: Davinio
-Lid 2: Brooklyn
+Lid 2: Johan
 Lid 3: Zinaad
