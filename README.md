@@ -3,3 +3,8 @@ Leider: Davinio
 Lid 1: Brooklyn
 Lid 2: Johan
 Lid 3: Zinaad
+
+
+Taken: 
+CSS: Davinio en Johan
+HTML: Zinaad en Brooklyn
