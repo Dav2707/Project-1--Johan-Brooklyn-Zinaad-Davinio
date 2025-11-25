@@ -6,3 +6,31 @@
     left: 10px;
     border-radius: 5px;   /* Mooie afgeronde hoeken */
 }
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;   /* centreert de items */
+  gap: 20px;                 /* ruimte tussen knoppen */
+  background: #f0f0f0;       /* optioneel: achtergrond bovenin */
+  position: fixed;           /* zet het bovenaan */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #0078ff;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  background: #005fcc;
+}

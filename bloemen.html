@@ -1,0 +1,378 @@
+```html
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloemenpracht - Jouw Online Bloemenboetiek</title>
+
+    <!-- Interne CSS voor basale styling. In een echte website zou dit in een apart .css bestand staan. -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50; /* Groen */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #5cb85c;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 50px 0;
+            background-image: url('afbeeldingen/bloemen_banner.jpg'); /* Zorg dat dit bestand bestaat! */
+            background-size: cover;
+            background-position: center;
+            min-height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Donkere overlay voor betere leesbaarheid */
+            z-index: 1;
+        }
+
+        .hero > * { /* Zorg dat tekst boven de overlay komt */
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        .hero .button {
+            display: inline-block;
+            background-color: #FFC107; /* Geel */
+            color: #333;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .hero .button:hover {
+            background-color: #e0a800; /* Donkerder geel */
+            color: white;
+        }
+
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #4CAF50;
+            margin: 40px 0 30px 0;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsieve kolommen */
+            gap: 30px; /* Ruimte tussen de items */
+            margin-top: 30px;
+        }
+
+        .grid-item {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 220px; /* Vaste hoogte voor uniformiteit */
+            object-fit: cover; /* Bijsnijden indien nodig */
+            display: block;
+        }
+
+        .grid-item h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin: 15px 0 10px 0;
+        }
+
+        .grid-item p {
+            font-size: 0.95em;
+            color: #666;
+            padding: 0 15px 15px;
+            margin-top: 0;
+        }
+        
+        .grid-item .price {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #E65100; /* Oranje */
+            margin-bottom: 10px;
+        }
+
+        .grid-item .add-to-cart {
+            display: inline-block;
+            background-color: #007bff; /* Blauw */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .grid-item .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        /* Over Ons sectie */
+        .about-section, .contact-section {
+            padding: 40px;
+            text-align: center;
+            margin-top: 30px;
+            border-radius: 10px;
+            background-color: #e6ffe6; /* Lichtgroen */
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .about-section h2, .contact-section h2 {
+            font-size: 2.8em;
+            color: #2e8b57; /* Donkerder groen */
+            margin-bottom: 20px;
+        }
+
+        .about-section p, .contact-section p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            color: #555;
+        }
+
+        .contact-section a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Basis responsiviteit voor kleinere schermen */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            .hero h2 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.2em;
+                padding: 0 15px;
+            }
+            nav a {
+                display: block;
+                margin: 5px auto;
+                width: fit-content;
+            }
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+            .grid {
+                grid-template-columns: 1fr; /* Één kolom op kleinere schermen */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bloemenpracht</h1>
+        <p>Jouw bron voor de mooiste en meest verse bloemen</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#assortiment">Ons Assortiment</a>
+        <a href="#over-ons">Over Ons</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Welkom bij Bloemenpracht!</h2>
+            <p>Ontdek onze betoverende collectie van verse bloemen, perfect voor elke gelegenheid. Breng kleur en vreugde in je leven met Bloemenpracht.</p>
+            <a href="#assortiment" class="button">Bekijk Ons Assortiment</a>
+        </section>
+
+        <section id="assortiment" class="container">
+            <h2 class="section-title">Ons Prachtige Assortiment</h2>
+            <p style="text-align: center; margin-bottom: 40px; font-size: 1.1em; color: #555;">Van klassieke rozen tot exotische orchideeën, wij hebben de perfecte bloem voor jou.</p>
+
+            <div class="grid">
+                <!-- Bloemen Item 1 -->
+                <div class="grid-item">
+                    <img src="afbeeldingen/roos.jpg" alt="Rode Roos">
+                    <h3>Betoverende Rode Roos</h3>
+                    <p>Symbool van liefde en passie. Perfect voor romantische gebaren.</p>
+                    <p class="price">&euro; 24.99</p>
+                    <a href="#" class="add-to-cart">Bestel Nu</a>
+                </div>
+
+                <!-- Bloemen Item 2 -->
+                <div class="grid-item">
+                    <img src="afbeeldingen/tulp.jpg" alt="Kleurrijke Tulp">
+                    <h3>Vrolijke Hollandse Tulp</h3>
+                    <p>Brengt direct een glimlach. Beschikbaar in diverse levendige kleuren.</p>
+                    <p class="price">&euro; 19.99</p>
+                    <a href="#" class="add-to-cart">Bestel Nu</a>
+                </div>
+
+                <!-- Bloemen Item 3 -->
+                <div class="grid-item">
+                    <img src="afbeeldingen/zonnebloem.jpg" alt="Stralende Zonnebloem">
+                    <h3>Zonnige Zonnebloem</h3>
+                    <p>Voor een explosie van zomerse energie en blijdschap.</p>
+                    <p class="price">&euro; 17.50</p>
+                    <a href="#" class="add-to-cart">Bestel Nu</a>
+                </div>
+
+                <!-- Bloemen Item 4 -->
+                <div class="grid-item">
+                    <img src="afbeeldingen/lelie.jpg" alt="Elegante Lelie">
+                    <h3>Elegante Witte Lelie</h3>
+                    <p>Staat voor puurheid en schoonheid. Ideaal voor serene momenten.</p>
+                    <p class="price">&euro; 29.99</p>
+                    <a href="#" class="add-to-cart">Bestel Nu</a>
+                </div>
+
+                <!-- Bloemen Item 5 -->
+                <div class="grid-item">
+                    <img src="afbeeldingen/orkidee.jpg" alt="Exotische Orchidee">
+                    <h3>Exotische Orchidee</h3>
+                    <p>Een vleugje luxe en mysterie voor je interieur of als cadeau.</p>
+                    <p class="price">&euro; 34.50</p>
+                    <a href="#" class="add-to-cart">Bestel Nu</a>
+                </div>
+                
+                <!-- Extra Bloemen Item (bijv.) -->
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/400x220/FFD1DC/333333?text=Anjer" alt="Roze Anjer">
+                    <h3>Vrolijke Anjer</h3>
+                    <p>Veelzijdige bloem die staat voor liefde en fascinatie.</p>
+                    <p class="price">&euro; 14.99</p>
+                    <a href="#" class="add-to-cart">Bestel Nu</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="over-ons" class="container about-section">
+            <h2 style="color: #2e8b57;">Over Bloemenpracht</h2>
+            <p>Bij Bloemenpracht geloven we in de kracht van de natuur om mensen te verbinden en geluk te brengen. Al sinds 20XX selecteren we met passie de mooiste en meest verse bloemen, rechtstreeks van de kweker. Ons team van ervaren bloemisten creëert met liefde de meest prachtige boeketten en arrangementen voor elke gelegenheid.</p>
+            <p>Of je nu een verjaardag viert, iemand wilt bedanken, of gewoon je huis wilt opfleuren, bij Bloemenpracht vind je altijd het perfecte boeket. Duurzaamheid en klanttevredenheid staan bij ons hoog in het vaandel.</p>
+        </section>
+
+        <section id="contact" class="container contact-section">
+            <h2 style="color: #2e8b57;">Neem Contact Op</h2>
+            <p>Heb je vragen, speciale wensen of wil je advies? Neem gerust contact met ons op!</p>
+            <p>E-mail: <a href="mailto:info@bloemenpracht.nl">info@bloemenpracht.nl</a></p>
+            <p>Telefoon: <a href="tel:+31612345678">+31 6 1234 5678</a></p>
+            <p>Adres: Bloemenstraat 10, 1234 AB Bloemenstad, Nederland</p>
+            <p>We zijn bereikbaar van maandag t/m zaterdag van 09:00 - 17:00.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Bloemenpracht. Alle rechten voorbehouden.</p>
+    </footer>
+
+</body>
+</html>
+```
