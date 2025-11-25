@@ -1,2 +1,13 @@
-<style><style>
+<style>
+    header {
+        background-color: lightseagreen;
+    }
 
+    footer {
+        color: lightseagreen;
+    }
+
+    body {
+        color: rgb(229, 247, 203);
+    }
+</style>
