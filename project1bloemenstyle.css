@@ -1,13 +1,11 @@
-<style>
-    header {
-        background-color: lightseagreen;
-    }
+h1 {
+    background-color: lightseagreen;
+}
 
-    footer {
-        color: lightseagreen;
-    }
+footer {
+    color: lightseagreen;
+}
 
-    body {
-        color: rgb(229, 247, 203);
-    }
-</style>
+body {
+    color: rgb(229, 247, 203);
+}
