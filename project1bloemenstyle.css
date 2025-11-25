@@ -1,13 +1,8 @@
-<style>
-    header {
-        background-color: lightseagreen;
-    }
-
-    footer {
-        color: lightseagreen;
-    }
-
-    body {
-        color: rgb(229, 247, 203);
-    }
-</style>
+.logo {
+    width: 120px;         /* Klein logo formaat */
+    height: auto;         /* Houdt verhoudingen */
+    position: fixed;      /* Links boven vast */
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;   /* Mooie afgeronde hoeken */
+}
