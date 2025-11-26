@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+   
+<img src="https://attachments.office.net/owa/brooklyn.hoefdraad%40student.rocvf.nl/service.svc/s/GetAttachmentThumbnail?id=AAkALgAAAAAAHYQDEapmEc2byACqAC%2FEWg0ABSVYrf8NDESS9Bu3OTYSbwAAWhdCrAAAARIAEACfYi1nJ47USKr4jbYVS%2FaQ&thumbnailType=2"
+     class="logo"
+     alt="logo">
+
+    <h1>BloemenWebsite</h1>
+    <p>Welcome bij de Goedkoopste en beste bloemenwinkel
+        van Flevoland!
+    </p>
+    <ul class="menu">
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul>
+
+<body>
+    <img src="https://th.bing.com/th/id/R.b7532f78cf5db0f042df31487af2ad38?rik=IiIMv%2bWczLDbBQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f03%2fColorful-flowers-wallpaper-hd-images.jpg&ehk=I4rzkNjMZF%2bN6o5iIx7GBLRYFsGS43e2QoRs54%2b%2b%2bHo%3d&risl=1&pid=ImgRaw&r=0" alt="Girl in a jacket" style="width:150%px;height:300px; border-radius: 15px 50px 30px 5px;">
+    <img src="https://www.wsbinterieurbouw.nl/wp-content/uploads/2024/05/topbloemen-amstelveen-bloemenwinkel-ontwerp-realisatie-1.jpg" alt="width:150%px;height:300px; border-radius: 15px 50px 30px 5px;">
+</body>
+
+
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.container div {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.container div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div>
+    <img src="https://www.bing.com/th/id/OIP.F0OyuuxLDW-myaT-KWxPkgHaE8?w=238&h=211&c=8&rs=1&qlt=90&o=6&dpr=2&pid=3.1&rm=2" alt="foto"> <li>Lachlard richaard</li>
+  </div>
+  <div>
+    <img src="https://th.bing.com/th/id/R.789e144f57ddb702cb77b23ed5b53e77?rik=s3gH1YtK6IzFrQ&pid=ImgRaw&r=0" alt=""> <li>Madelieven</li>
+  </div>
+  <div>
+    <img src="https://tse4.mm.bing.net/th/id/OIP.lvnrLERgZ7AeMZPofE2wPgHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt=""> <li>Helianthus</li>
+  </div>
+  <div>
+    <img src="https://gardenandhappy.com/wp-content/uploads/2018/11/rudbeckia_1542983806-1024x682.jpg" alt=""><li>Rudbeckia</li>
+  </div>
+  <div>
+    <img src="https://th.bing.com/th/id/R.05c42cfee8d674b8ac8a4015dd878b3d?rik=T%2fYGbyD50WAfzg&riu=http%3a%2f%2fbloomingbulb.com%2fcdn%2fshop%2fproducts%2fBlueShadesAnemoneblanda.jpg%3fv%3d1609013980&ehk=uMUt%2bIL9%2fSnPL7q4mIKbRqQgnF22ke7VpNGyz7zyvZE%3d&risl=&pid=ImgRaw&r=0" alt=""><li>Anemone Blanda</li>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<html>
+
+</html>
+{
+    <div>
+    </body>
+    </div>
+}
+
+<body>
+    <section>
+        <div>Contact</div>
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        <div>
+<h2>Contact</h2>
+    <p>Neem contact op met ons, wij helpen je graag!</div>p>
+
+
+
+   
+</body>
+<ul> Lachlard Richardo</ul>
+<ul>Madelieven</ul>
+<ul>Helianthus</ul>
+<ul>Rudbackia</ul>
+<ul>Anemone Blanda</ul>
+<body>
+    divclass="flower-list">
+    <div>Lachlard Richardo</div>
+    <div>Madelieven</div>
+    <div>Helianthus</div>
+    <div>Anemone Blanda</div>
+</body>
+
+<html>
+</html>
+
+<body>
+    <div>
+        <h2>Over Ons</h2>
+        <p>NoraFlora is jouw vertrouwde bloemenwinkel in Flevoland. Wij bieden een breed assortiment aan verse bloemen voor elke gelegenheid. Of je nu op zoek bent naar een prachtig boeket voor een speciale gebeurtenis of gewoon je huis wilt opvrolijken, bij ons ben je aan het juiste adres.</p>
+    </div>
+</body>
+   
+
+divclass=Rozen
+<i class="Rozen"></i>
+Rozen Colour red
+
+<body>
+     
+
+
+
+
+
+
+
+div class="footer">
+        <p>&copy; 2025 NoraFlora. Bloemen vol met liefde.</p>
+    </div>
+<div>
+</body>
