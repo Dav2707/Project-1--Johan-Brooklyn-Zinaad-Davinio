@@ -11,7 +11,7 @@ body {
 }
 
 .logo {
-  width: 120px;
+  width: 10px;
   /* Klein logo formaat */
   height: auto;
   /* Houdt verhoudingen */
@@ -54,4 +54,11 @@ body {
 .menu li a:hover {
   background: #005fcc;
 }
-j
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
