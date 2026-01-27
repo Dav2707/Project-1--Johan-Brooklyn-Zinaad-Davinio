@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<input type="text" id="number">
+<button id="button">Gooien</button>
+<div id="text"></div>
+</body>
+
+<script>
+let getalTeRaden = 6;
+let button = document.querySelector("#button");
+button.addEventListener("click", guess);
+
+let textElement = document.querySelector("#text");
+
+function guess() {
+let numberGuessed = document.querySelector("#number").value;
+if(numberGuessed > getalTeRaden){textElement.textContent = "getal is te hoog"}
+if(numberGuessed < getalTeRaden){textElement.textContent = "getal is te laag";}
+if(numberGuessed == getalTeRaden){textElement.textContent = "GOED";}
+}
+
+//voorbeeld array iets teovoegen
+numbers.push(5);
+
+</script>
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<input type="text" id="number">
+<button id="button">Gooien</button>
+<div id="text"></div>
+</body>
+
+<script>
+let getalTeRaden = 6;
+let button = document.querySelector("#button");
+button.addEventListener("click", gooien);
+
+let textElement = document.querySelector("#text");
+
+function gooien() {
+
+    console.log("button clicked");
+    let numbers = [];
+
+    let random = Math.floor(Math.random() * 6) + 1; 
+    numbers.push(random);
+    console.log(numbers);
+
+}
+
+//voorbeeld array iets teovoegen
+numbers = ["1", "6", "3", "5", "2"];
+numbers.push("5");
+
+</script> 
+</html>
